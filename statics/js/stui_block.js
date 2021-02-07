@@ -27,7 +27,7 @@ var qrcode2 = "1";
 var copyshort = "0"
 //是否开启自动生成短链接，0关闭1开启（开启后点击分享按钮将会复制短链否则复制默认链接）
 
-var baidushare = "https://cdn.jsdelivr.net/gh/ttmvimg/plam/statics/api/js/share.js";
+var baidushare = "";
 //是否开启百度分享，0关闭，启用本地分享填写/statics/api/js/share.js，启用官网分享填写http://bdimg.share.baidu.com/static/api/js/share.js（不支持https）
 
 var stui = {
