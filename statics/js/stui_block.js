@@ -3,12 +3,6 @@
  * Email 726662013@qq.com
  */
 
-if(window.console&&window.console.log){  
-	console.log('首涂网（v.shoutu.cn）原创作品');  
-	console.log('作者：小二哥，QQ：726662013');  
-	console.log("%c原创作品请尊重作者劳动成果，勿倒卖分享，谢谢！","color:red");  
-}
-
 var playerhigh = "1"; 
 //是否开启播放器高度自适应，0关闭1开启（开启后将播放器设置100%关闭填写固定高度）
 
