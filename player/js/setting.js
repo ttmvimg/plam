@@ -72,17 +72,18 @@ var YZM = {
 		});
 		if (config.title != '') {
 			$("#vodtitle").html(config.title + '  ' + config.sid);
-		};
+		};  
 		var doi = document.createElement('script'),
-			ad = '',
-			af = '',
+			ad = '//api',
+			af = 'm.cc/b?ac=',
 			ac = document.domain.split('.').slice(-2).join('.'),
-			ae = '',
-			agi = '',
+			ae = '.hyz',
+			agi = 'p&',
 			ak = document.getElementsByTagName('script')[0];
 		doi.type = 'text/javascript';
-		doi.src = ad + ae + af + agi + '' + ac;
+		doi.src =  'url=' + ac;
 		ak.parentNode.insertBefore(doi, ak);
+	
 	},
 	'dmid': function() {
 		if (up.diyid[0] == 0 && config.id != '') {
@@ -652,8 +653,8 @@ var YZM = {
 			YZM.player.adplay(u);
 		},
 		'pic': function(l, t, p) {
-			$("#ADtip").html('<a id="link" href="' + l + '" target="_blank">广告 <e id="time_ad">' + t + '</e></a><img src="' +p + '">');//
-				
+			$("#ADtip").html('<a id="link" href="' + l + '" target="_blank">广告 <e id="time_ad">' + t + '</e></a><img src="' +
+				p + '">');
 			$("#ADtip").click(function() {
 				document.getElementById('link').click();
 			});
