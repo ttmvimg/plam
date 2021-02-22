@@ -975,8 +975,8 @@
 							e.infoPanel.triggle()
 						}
 					}, {
-						text: "COKEMV-5.0",
-						link: "https://cokemv.cn"
+						text: "手掌tv",
+						link: "http://plamtv.com"
 					}]), e
 			}
 		},
