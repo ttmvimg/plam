@@ -279,7 +279,7 @@ textarea.form-control{ height: auto; padding: 10px;}
 .myui-table>tbody>tr>td, .myui-table>tbody>tr>th, .myui-table>tfoot>tr>td, .myui-table>tfoot>tr>th, .myui-table>thead>tr>td, .myui-table>thead>tr>th { padding: 8px; line-height: 25px; vertical-align: top; border-bottom: 1px solid;}
 
 /* message */
-.styu-message__list{ position: relative; padding: 20px 0;}
+.styu-message__list{ position: relative; padding: 1px 0;}
 .styu-message__list .avatar{ float: left; width: 60px;}
 .styu-message__list .data{ margin-left: 60px;}
 .styu-message__list .data .name{ margin: 0; font-size: 16px;}
