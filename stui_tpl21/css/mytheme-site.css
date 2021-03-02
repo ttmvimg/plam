@@ -53,7 +53,7 @@
 .myui-content__detail .score .rating li{ cursor:pointer; display: inline-block; margin-right: 5px;}
 .myui-content__detail .score .rating li .fa{ font-size: 24px;}
 .myui-content__detail .score .branch{ display: inline-block; font-family: Georgia,"Times New Roman",Times,serif; font-size: 24px; line-height: 24px;}
-.myui-content__operate{ float: left; margin-top: 20px}
+.myui-content__operate{ float: left; margin-top: 0px}
 .myui-content__operate .btn{ margin-left: 10px; margin-bottom: 10px;}
 .myui-content__operate .btn:first-child{ margin-left: 0;}
 .myui-content__operate .share{ margin-top:5px}
@@ -140,7 +140,7 @@
 	.myui-content__detail .score  .rating li{ margin: 0;}
 	.myui-content__detail .score  .rating li .fa{ font-size: 18px;}
 	.myui-content__operate{ width: 100%; padding: 0; display: -webkit-box; display: -webkit-flex; display: flex;}
-	.myui-content__operate .btn{ text-align: center; padding: 8px; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;}
+	.myui-content__operate .btn{ text-align: center; padding: 6px; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;}
 	
 	/* player */
 	.myui-player{ padding-top: 0;}
