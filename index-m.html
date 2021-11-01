@@ -1,0 +1,521 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="雨滴导航-做一个简简单单的导航站">
+<meta name="keywords" content="雨滴导航-做一个简简单单的导航站">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>雨滴导航-做一个简简单单的导航站</title>
+    <link rel="shortcut icon" href="favcion.png">
+    <link rel="stylesheet" href=" css/iconfont.css">
+    <link rel="stylesheet" href="../plug-in/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-min.css?0602">
+
+
+</head>
+
+<body>
+<script type="text/javascript">
++function(){
+    var link = document.createElement('link');
+    var head = document.querySelector('head');
+    link.rel = 'stylesheet';
+    link.href = '//bx.dataoke.com//static/build/www/web/css/zujian.css?t=201904161709';
+    head.appendChild(link);
+
+    var fixedTagMall = document.createElement('a');
+    fixedTagMall.href = '//mall.wenruding.club';
+    fixedTagMall.target = '_blank';
+    fixedTagMall.className = 'dtk-fixed-tag-mall';
+    fixedTagMall.innerHTML = '<img src="http://hao.wenruding.club/img/tag-mall.png">商城';
+
+    var fixedTagTop = document.createElement('a');
+    fixedTagTop.href = 'javascript:;';
+    fixedTagTop.className = 'dtk-fixed-tag-top';
+    fixedTagTop.innerHTML = '<img src="http://hao.wenruding.club/img/tag-top.png">顶部';
+    fixedTagTop.onclick = function(){
+        var timer=setInterval(function(){
+           var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+           var ispeed=Math.floor(-scrollTop/6);
+           console.log(ispeed)
+           if(scrollTop==0){
+               clearInterval(timer);
+           }
+           document.documentElement.scrollTop=document.body.scrollTop=scrollTop+ispeed;
+       },30)
+    }
+
+    var fixedTag = document.createElement('div');
+    fixedTag.className = 'dtk-fixed-tag';
+    fixedTag.appendChild(fixedTagMall);
+    fixedTag.appendChild(fixedTagTop);
+
+    document.body.appendChild(fixedTag);
+
+    window.onscroll = function(){
+        if (window.scrollY > window.innerHeight - 100 ){
+            fixedTag.style.display = 'block';
+        }
+        else {
+            fixedTag.style.display = 'none';
+        }
+    };
+}()</script>
+
+
+
+    <div class="container" id="container">
+        <aside class="left-bar" id="leftBar">
+            <div class="title">
+                <p>雨滴导航</p>
+            </div>
+            <nav class="nav">
+                <div class="item active"><a href=""><i class="iconfont icon-daohang2"></i>雨滴导航</a><i class="line"></i></div>
+                <ul class="nav-item" id="navItem">
+                    <li><a href="#bbs" class="active"><i class="iconfont icon-shequ"></i>雨滴系列</a></li>
+                    <li><a href="#sill"><i class="iconfont icon-blogger"></i>教师工具</a></li>
+                    <li><a href="#docs"><i class="iconfont icon-wendangdocument78"></i>专业文库</a></li>
+                    <li><a href="#tools"><i class="iconfont icon-tool"></i>实用工具</a></li>
+                    <li class="download"><a href="https://gitee.com/wenruding/navigation"><i class="iconfont icon-github"></i>源码下载</a></li>
+                </ul>
+                <div class="item comment"><a target="_blank" href="http://liuyan.wenruding.club/"><i class="iconfont icon-liuyan"></i>留言</a></div>
+            </nav>
+        </aside>
+        <section class="main">
+            <div id="mainContent">
+                <!-- 手机端菜单 -->
+                <div id="menu-box">
+                   <div id="menu">
+                       <input type="checkbox" id="menu-form">
+                       <label for="menu-form" class="menu-spin">
+                        <div class="line diagonal line-1"></div>
+                        <div class="line horizontal"></div>
+                        <div class="line diagonal line-2"></div>
+                      </label>
+                    </div>
+                </div>
+				
+				
+<!-- 雨滴搜索模块 -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min1.css"/>
+
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+<link rel="ico" href="images/apple-touch-icon.png" />
+
+<script type="text/javascript">
+try {
+var urlhash = window.location.hash;
+if (!urlhash.match("fromapp")){
+if ((navigator.userAgent.match(/(iPhone|iPod|Android|iOS|iPad)/i))){
+window.location="#";
+}
+else {
+window.location="index.html";
+}
+}
+}
+catch(err){
+}
+</script>
+<script>
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+</script>
+
+
+
+<style>ICONM
+.panel-top-links {margin-top:3px;font-size:14px;}
+</style>
+<div id="search"class="s-search">
+<div id="search-list"class="hide-type-list">
+<div class="s-type">
+<span></span>
+<div class="s-type-list">
+<label for="type-baidu">常用</label>
+<label for="type-163">音乐</label>
+<label for="type-saaee">影视</label>
+<label for="type-taobao">购物</label>
+<label for="type-pc6">工具</label>
+</div></div>
+<div class="search-group group-a s-current">
+<span class="type-text">常用</span>
+<ul class="search-type">
+<li><input checked hidden type="radio"name="type"id="type-baidu"value="https://www.baidu.com/s?wd="data-placeholder="百度一下雨滴导航"><label for="type-baidu"><span style="color:#2100E0">百度</span></label></li>
+<li><input type="radio"hidden name="type"id="type-google"value="https://gugeji.com/search?q="data-placeholder="谷歌镜像"><label for="type-google"><span style="color:#3B83FA">G</span><span style="color:#F3442C">o</span><span style="color:#FFC300">o</span><span style="color:#4696F8">g</span><span style="color:#2CAB4E">l</span><span style="color:#F54231">e</span></label></li>
+<li><input hidden type="radio"name="type"id="type-dribbble"value="https://wenku.baidu.com/search?word="data-placeholder="百度文库"><label for="type-dribbble"><span style="color:#EC4989">文库</span></label></li>
+</ul></div>
+
+
+<div class="search-group group-e"><span class="type-text">音乐</span><ul class="search-type">
+<li><input hidden type="radio"name="type"id="type-163"value="http://music.163.com/#/search/m/?s="data-placeholder="网易云音乐"><label for="type-163"><span style="color:#c70c0c">云音乐</span></label></li>
+<li><input hidden type="radio"name="type"id="type-xiami"value="http://www.xiami.com/search?key="data-placeholder="虾米音乐"><label for="type-xiami"><span style="color:#e96b00">虾米</span></label></li>
+<li><input hidden type="radio"name="type"id="type-baidu-music"value="http://music.baidu.com/search?key="data-placeholder="百度音乐"><label for="type-baidu-music"><span style="color:#2100E0">百度音乐</span></label></li>
+<li><input hidden type="radio"name="type"id="type-qq-music"value="https://y.qq.com/portal/search.html#searchid=1&remoteplace=txt.yqq.top&t=song&w="data-placeholder="QQ音乐"><label for="type-qq-music"><span style="color:#2eb674">QQ音乐</span></label></li>
+<li><input hidden type="radio"name="type"id="type-ape8"value="http://ape8.cn/?s="data-placeholder="ape8无损音乐"><label for="type-ape8"><span style="color:#999">无损音乐</span></label></li>
+</ul></div>
+
+
+<div class="search-group group-f"><span class="type-text">影视</span><ul class="search-type">
+<li><input hidden type="radio"name="type"id="type-saaee"value="http://www.saaee.com/search?q="data-placeholder="迅影网"><label for="type-saaee"><span style="color:#262626">迅影网</span></label></li>
+<li><input hidden type="radio"name="type"id="type-gaoqing"value="http://gaoqing.la/?s="data-placeholder="中国高清网"><label for="type-gaoqing"><span style="color:#262626">中国高清网</span></label></li>
+<li><input hidden type="radio"name="type"id="type-youku"value="http://www.soku.com/search_video/q_"data-placeholder="优酷"><label for="type-youku"><span style="color:#2fb3ff">优酷</span></label></li>
+</ul></div>
+
+
+<div class="search-group group-g"><span class="type-text">购物</span><ul class="search-type">
+<li><input hidden type="radio"name="type"id="type-taobao"value="https://s.taobao.com/search?q="data-placeholder="淘宝"><label for="type-taobao"><span style="color:#ff4400">淘宝</span></label></li>
+<li><input hidden type="radio"name="type"id="type-tmall"value="https://list.tmall.com/search_product.htm?q="data-placeholder="天猫"><label for="type-tmall"><span style="color:#dd2727">天猫</span></label></li>
+<li><input hidden type="radio"name="type"id="type-jd"value="https://search.jd.com/Search?keyword="data-placeholder="京东"><label for="type-jd"><span style="color:#c91623">京东</span></label></li>
+<li><input hidden type="radio"name="type"id="type-dangdang"value="http://search.dangdang.com/?key="data-placeholder="当当"><label for="type-dangdang"><span style="color:#ff3228">当当</span></label></li>
+<li><input hidden type="radio"name="type"id="type-meituan"value="http://cd.meituan.com/s/?w="data-placeholder="美团"><label for="type-meituan"><span style="color:#35b7a9">美团</span></label></li>
+</ul></div>
+
+<div class="search-group group-j"><span class="type-text">工具</span><ul class="search-type"><li><input hidden type="radio"name="type"id="type-pc6"value="http://s.pc6.com/?k="data-placeholder="PC6软件下载站"><label for="type-pc6"><span style="color:#262626">软件</span></label></li><li><input hidden type="radio"name="type"id="type-AAA"value="BBB"data-placeholder="BT下载"><label for="type-AAA"><span style="color:#262626">BT下载</span></label></li><li><input hidden type="radio"name="type"id="type-ygyhg"value="https://so.ygyhg.com/s?keyword="data-placeholder="网盘"><label for="type-ygyhg"><span style="color:#262626">网盘</span></label></li><li><input hidden type="radio"name="type"id="type-kuaidi100"value="https://m.kuaidi100.com/result.jsp?nu="data-placeholder="请输入快递单号"><label for="type-kuaidi100"><span style="color:#262626">查快递</span></label></li><li><input hidden type="radio"name="type"id="type-baidumap"value="http://map.baidu.com/?newmap=1&s=con%26wd%3D"data-placeholder="地图"><label for="type-baidumap"><span style="color:#262626">百度地图</span></label></li><li><input hidden type="radio"name="type"id="type-translateA"value="https://translate.google.cn/#zh-CN/en/"data-placeholder="中 译 英（Google）"><label for="type-translateA"><span style="color:#262626">中->英</span></label></li><li><input hidden type="radio"name="type"id="type-translateB"value="https://translate.google.cn/#en/zh-CN/"data-placeholder="英 译 中（Google）"><label for="type-translateB"><span style="color:#262626">英->中</span></label></li><li><input hidden type="radio"name="type"id="type-translateC"value="https://translate.google.cn/#zh-CN/zh-TW/"data-placeholder="简体 转 繁体（Google）"><label for="type-translateC"><span style="color:#262626">简->繁</span></label></li><li><input hidden type="radio"name="type"id="type-youdao"value="http://www.youdao.com/w/"data-placeholder="请输入要翻译的单词或文字"><label for="type-youdao"><span style="color:#262626">有道</span></label></li></ul></div>
+</div>
+
+<form action="https://www.baidu.com/s?wd="method="get"target="_blank"id="super-search-fm"><input type="text"id="search-text"placeholder="百度一下"style="outline:none"autofocus/><button type="submit"><i class="fa fa-search"></i></button></form><div class="set-check"><input type="checkbox"id="set-search-blank"class="bubble-3"checked required><label for="set-search-blank"class="green">新窗口打开搜索结果</label></div></div>
+
+<script type="text/javascript">
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('!2(){2 g(){h(),i(),j(),k()}2 h(){d.9=s()}2 i(){z a=4.8(\'A[B="7"][5="\'+p()+\'"]\');a&&(a.9=!0,l(a))}2 j(){v(u())}2 k(){w(t())}2 l(a){P(z b=0;b<e.O;b++)e[b].I.1c("s-M");a.F.F.F.I.V("s-M")}2 m(a,b){E.H.S("L"+a,b)}2 n(a){6 E.H.Y("L"+a)}2 o(a){f=a.3,v(u()),w(a.3.5),m("7",a.3.5),c.K(),l(a.3)}2 p(){z b=n("7");6 b||a[0].5}2 q(a){m("J",a.3.9?1:-1),x(a.3.9)}2 r(a){6 a.11(),""==c.5?(c.K(),!1):(w(t()+c.5),x(s()),s()?E.U(b.G,+T X):13.Z=b.G,10 0)}2 s(){z a=n("J");6 a?1==a:!0}2 t(){6 4.8(\'A[B="7"]:9\').5}2 u(){6 4.8(\'A[B="7"]:9\').W("14-N")}2 v(a){c.1e("N",a)}2 w(a){b.G=a}2 x(a){a?b.3="1a":b.16("3")}z y,a=4.R(\'A[B="7"]\'),b=4.8("#18-C-19"),c=4.8("#C-12"),d=4.8("#17-C-15"),e=4.R(".C-1b"),f=a[0];P(g(),y=0;y<a.O;y++)a[y].D("Q",o);d.D("Q",q),b.D("1d",r)}();',62,77,'||function|target|document|value|return|type|querySelector|checked||||||||||||||||||||||||||var|input|name|search|addEventListener|window|parentNode|action|localStorage|classList|newWindow|focus|superSearch|current|placeholder|length|for|change|querySelectorAll|setItem|new|open|add|getAttribute|Date|getItem|href|void|preventDefault|text|location|data|blank|removeAttribute|set|super|fm|_blank|group|remove|submit|setAttribute'.split('|'),0,{}))
+</script>
+
+<!-- ./ 雨滴搜索模块 -->
+<!-- 雨滴系列 -->
+<link rel="shortcut icon" href="favcion.ico" />
+    <link rel="stylesheet" href=" css/iconfont.css">
+    <link rel="stylesheet" href="../plug-in/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-min.css?0602"/>
+                <div class="box">
+                    <a href="#" name="bbs"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-shequ"></i>雨滴系列</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="http://bbs.wenruding.club/">
+                            <div class="item">
+                                <div class="no-logo">雨滴博客</div>
+                            </div>
+                        </a>
+                        <a href="http://pan.wenruding.club">
+                            <div class="item">
+                                <div class="no-logo">雨滴网盘</div>
+         
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://movie.wenruding.club">
+                            <div class="item">
+                                <div class="no-logo">雨滴影院</div>
+       
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://mall.wenruding.club">
+                            <div class="item">
+                                <div class="no-logo">雨滴商店</div>
+             
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://segmentfault.com/">
+                            <div class="item">
+                                <div class="no-logo">segmentfault</div>
+               
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.zhihu.com/">
+                            <div class="item">
+                                <div class="no-logo">知乎</div>
+         
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.cnblogs.com/">
+                            <div class="item">
+                                <div class="no-logo">博客园</div>
+             
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.oschina.net/">
+                            <div class="item">
+                                <div class="no-logo">开源中国</div>
+                  
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.v2ex.com/">
+                            <div class="item">
+                                <div class="no-logo">V2EX</div>
+                  
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://coding.net/">
+                            <div class="item">
+                                <div class="no-logo">Coding</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                </div>
+ <!-- 教师工具 -->
+                <div class="box">
+                    <a href="#" name="sill"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-blogger"></i>教师工具</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="http://www.jyeoo.com">
+                            <div class="item">
+                                <div class="no-logo">菁优网</div>
+                
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://www.zxxk.com">
+                            <div class="item">
+                                <div class="no-logo">学科网</div>
+            
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.21cnjy.com/">
+                            <div class="item">
+                                <div class="no-logo">21世纪
+                                </div>
+          
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://wk.baidu.com/">
+                            <div class="item">
+                                <div class="no-logo">百度文库
+                                </div>
+            
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.5ykj.com/">
+                            <div class="item">
+                                <div class="no-logo">莲山课件
+                                </div>
+             
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://ntce.neea.edu.cn/">
+                            <div class="item">
+                                <div class="no-logo">教资报考
+                                </div>
+    
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://efe.baidu.com/">
+                            <div class="item">
+                                <div class="no-logo">EFE
+                                </div>
+      
+                            </div>
+                        </a>
+                    </div>
+                </div>
+ <!-- 专业文库 -->
+                <div class="box">
+                    <a href="" name="docs"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-wendangdocument78"></i>专业文库</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="http://jquery.cuishifeng.cn/index.html">
+                            <div class="item">
+                                <div class="no-logo">jQuery</div>
+            
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://v3.bootcss.com/">
+                            <div class="item">
+                                <div class="no-logo">Bootstrap</div>
+           
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://v3.bootcss.com/">
+                            <div class="item">
+                                <div class="no-logo">Vue.js</div>
+           
+                            </div>
+                        </a>
+                    </div>
+                </div>
+<!-- 实用工具 -->
+                <div class="box">
+                    <a href="" name="tools"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-tool"></i>实用工具</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="http://www.51job.com/">
+                            <div class="item">
+                                <div class="no-logo">前程无忧</div>
+                            </div>
+                        </a>
+						<a target="_blank" href="http://bx.dataoke.com/">
+                            <div class="item">
+                            <div class="no-logo">大淘客</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://www.peise.net/tools/web/">
+                            <div class="item">
+                                <div class="no-logo">
+                                    网页配色工具</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://www.uupoop.com/">
+                            <div class="item">
+                                <div class="no-logo">在线PS</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://dummyimage.com/">
+                            <div class="item">
+                                <div class="no-logo">动图生成</div>
+                            </div>
+                        </a>
+                        
+                        <a target="_blank" href="https://cli.im/deqr">
+                            <div class="item">
+                                <div class="no-logo">二维码生成</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.zybuluo.com/mdeditor">
+                            <div class="item">
+                                <div class="no-logo">MD在线</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+<!-- 学无止境
+                <div class="box">
+                    <a href="#" name="study"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-xuexi1"></i>学无止境</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.w3cschool.cn/">
+                            <div class="item">
+                                <div class="no-no-logo">w3cschool</div>
+                                <div class="desc"></div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.imooc.com/">
+                            <div class="item">
+                                <div class="no-no-logo">慕课网</div>
+                                <div class="desc"></div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://study.163.com/">
+                            <div class="item">
+                                <div class="no-no-logo">网易课堂</div>
+                                <div class="desc"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+ -->
+                </div>
+                <footer class="footer">
+                    <div class="copyright">
+                        <div><a href="https://tongji.baidu.com/web/welcome/ico?s=e93d097b332d5e62dc380c941d8a9fb7"><img src="img/tongji.gif">·</a>
+                            Copyright © 2018- 2019
+                            <a href="http://hao.wenruding.club">hao.wenruding.club. All Rights Reserved.</a><a href="http://www.beian.gov.cn">· 粤ICP备18154459号</a>
+                        </div>
+						
+                    </div>
+                </footer>
+
+        </section>
+      
+        <script src="js/jquery.js"></script>
+        <script>
+        var oMenu = document.getElementById('menu');
+        var oLeftBar = document.getElementById('leftBar');
+        var menuFrom = document.getElementById('menu-form');
+
+        oMenu.onclick = function() {
+            if (oLeftBar.offsetLeft == 0) {
+                oLeftBar.style.left = -249 + 'px';
+            }
+            else {
+                oLeftBar.style.left = 0;
+            }
+        }
+
+
+        // 监听页面宽度变化
+        window.onresize = function() {
+            judgeWidth();
+            // console.log(document.documentElement.clientWidth);
+        };
+
+        // 判断页面宽度
+        function judgeWidth() {
+            if (document.documentElement.clientWidth > 481) {
+                oLeftBar.style.left = 0;
+            } else {
+                oLeftBar.style.left = -249 + 'px';
+            }
+        }
+
+
+        var oNavItem = document.getElementById('navItem');
+        var aA = oNavItem.getElementsByTagName('a');
+        for (var i = 0; i < aA.length; i++) {
+            aA[i].onclick = function() {
+                for (var j = 0; j < aA.length; j++) {
+                    aA[j].className = '';
+                }
+                this.className = 'active';
+                if (oLeftBar.offsetLeft == 0) {
+                    if (document.documentElement.clientWidth <= 481) {
+                        oLeftBar.style.left = -249 + 'px';
+                        menuFrom.checked = false;
+
+                    }
+                }
+            }
+        }
+
+
+        $(window).scroll(function() {
+            if($(window).scrollTop() >= 200){
+                $('#fixedBar').fadeIn(300);
+            }else{
+                $('#fixedBar').fadeOut(300);
+            }
+        });
+        $('#fixedBar').click(function() {
+            $('html,body').animate({scrollTop:'0px'},800);
+        })
+        </script>
+<!--百度统计-->
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e93d097b332d5e62dc380c941d8a9fb7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--百度链接提交-->
+      <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+      
+</body>
+
+</html>
