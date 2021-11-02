@@ -83,39 +83,73 @@ catch(err){
 <div class="s-type">
 <span></span>
 <div class="s-type-list">
-<label for="type-ysw">影视网</label> 
-<label for="type-jx">视频解析</label> 
-<label for="type-xw">热门新闻</label> 
-</div></div>
-<div class="search-group group-a">
-<span class="type-text">影视网</span> 
-        <ul class="search-type"> 
-         <li><input checked hidden type="radio" name="type" id="type-ysw" value="https://v.qq.com/x/search/?q=" data-placeholder="腾讯" /><label for="type-baidu"><span style="color:#2100E0">腾讯</span></label></li> 
-         <li><input type="radio" hidden="" name="type" id="type-12" value="https://so.iqiyi.com/so/q_" data-placeholder="爱奇艺" /><label for="type-baidu"><span style="color:#2100E1">爱奇艺</span></label></li> 
-         <li><input hidden="" type="radio" name="type" id="type-13" value="https://so.youku.com/search_video/q_" data-placeholder="优酷" /><label for="type-youku"><span style="color:#2fb3mf">优酷</span></label></li> 
-		 <li><input hidden="" type="radio" name="type" id="type-14" value="https://so.mgtv.com/so?k=" data-placeholder="芒果" /><label for="type-youku"><span style="color:#2fb3fm">芒果</span></label></li> 
-		 <li><input hidden="" type="radio" name="type" id="type-15" value="https://so.tv.sohu.com/mts?wd=" data-placeholder="搜狐" /><label for="type-youku"><span style="color:#2fb3fl">搜狐</span></label></li> 
-        </ul>
-       </div> 
-       <div class="search-group group-e">
-        <span class="type-text">视频解析</span>
-        <ul class="search-type"> 
-		 <li><input hidden="" type="radio" name="type" id="type-jx" value="http://okjx.cc/?url=" data-placeholder="解析1" /><label for="type-ape8"><span style="color:#999">解析1</span></label></li> 
-         <li><input hidden="" type="radio" name="type" id="type-23" value="https://tv.attakids.com/sigu99/sigy.php?test=" data-placeholder="解析2" /><label for="type-163"><span style="color:#c70c0c">解析2</span></label></li> 
-         <li><input hidden="" type="radio" name="type" id="type-24" value="https://jx.parwix.com:4433/player/?url=" data-placeholder="解析3" /><label for="type-xiami"><span style="color:#e96b00">解析3</span></label></li> 
-         <li><input hidden="" type="radio" name="type" id="type-25" value="https://jx.ap2p.cn/?url=" data-placeholder="解析4" /><label for="type-baidu-music"><span style="color:#2100E0">解析4</span></label></li> 
-         <li><input hidden="" type="radio" name="type" id="type-26" value="hhttps://www.pangujiexi.cc/jiexi.php?url=" data-placeholder="解析5" /><label for="type-qq-music"><span style="color:#2eb674">解析5</span></label></li> 
-        </ul>
-       </div> 
-       <div class="search-group group-f">
-        <span class="type-text">热门新闻</span>
-        <ul class="search-type"> 
-         <li><input hidden="" type="radio" name="type" id="type-xw" value="https://s.weibo.com/weibo?q=" data-placeholder="微博" /><label for="type-saaee"><span style="color:#262626">微博</span></label></li> 
-          
-        </ul>
-       </div> 
+label for="type-baidu">常用</label>
 
-      </div> 
+<label for="type-163">音乐</label>
+
+<label for="type-saaee">影视</label>
+
+<label for="type-taobao">购物</label>
+
+<label for="type-pc6">工具</label>
+
+</div></div>
+
+<div class="search-group group-a s-current">
+
+<span class="type-text">常用</span>
+
+<ul class="search-type">
+
+<li><input checked hidden type="radio"name="type"id="type-baidu"value="https://www.baidu.com/s?wd="data-placeholder="百度一下雨滴导航"><label for="type-baidu"><span style="color:#2100E0">百度</span></label></li>
+
+<li><input type="radio"hidden name="type"id="type-google"value="https://gugeji.com/search?q="data-placeholder="谷歌镜像"><label for="type-google"><span style="color:#3B83FA">G</span><span style="color:#F3442C">o</span><span style="color:#FFC300">o</span><span style="color:#4696F8">g</span><span style="color:#2CAB4E">l</span><span style="color:#F54231">e</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-dribbble"value="https://wenku.baidu.com/search?word="data-placeholder="百度文库"><label for="type-dribbble"><span style="color:#EC4989">文库</span></label></li>
+
+</ul></div>
+
+<div class="search-group group-e"><span class="type-text">音乐</span><ul class="search-type">
+
+<li><input hidden type="radio"name="type"id="type-163"value="http://music.163.com/#/search/m/?s="data-placeholder="网易云音乐"><label for="type-163"><span style="color:#c70c0c">云音乐</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-xiami"value="http://www.xiami.com/search?key="data-placeholder="虾米音乐"><label for="type-xiami"><span style="color:#e96b00">虾米</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-baidu-music"value="http://music.baidu.com/search?key="data-placeholder="百度音乐"><label for="type-baidu-music"><span style="color:#2100E0">百度音乐</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-qq-music"value="https://y.qq.com/portal/search.html#searchid=1&remoteplace=txt.yqq.top&t=song&w="data-placeholder="QQ音乐"><label for="type-qq-music"><span style="color:#2eb674">QQ音乐</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-ape8"value="http://ape8.cn/?s="data-placeholder="ape8无损音乐"><label for="type-ape8"><span style="color:#999">无损音乐</span></label></li>
+
+</ul></div>
+
+<div class="search-group group-f"><span class="type-text">影视</span><ul class="search-type">
+
+<li><input hidden type="radio"name="type"id="type-saaee"value="http://www.saaee.com/search?q="data-placeholder="迅影网"><label for="type-saaee"><span style="color:#262626">迅影网</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-gaoqing"value="http://gaoqing.la/?s="data-placeholder="中国高清网"><label for="type-gaoqing"><span style="color:#262626">中国高清网</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-youku"value="http://www.soku.com/search_video/q_"data-placeholder="优酷"><label for="type-youku"><span style="color:#2fb3ff">优酷</span></label></li>
+
+</ul></div>
+
+<div class="search-group group-g"><span class="type-text">购物</span><ul class="search-type">
+
+<li><input hidden type="radio"name="type"id="type-taobao"value="https://s.taobao.com/search?q="data-placeholder="淘宝"><label for="type-taobao"><span style="color:#ff4400">淘宝</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-tmall"value="https://list.tmall.com/search_product.htm?q="data-placeholder="天猫"><label for="type-tmall"><span style="color:#dd2727">天猫</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-jd"value="https://search.jd.com/Search?keyword="data-placeholder="京东"><label for="type-jd"><span style="color:#c91623">京东</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-dangdang"value="http://search.dangdang.com/?key="data-placeholder="当当"><label for="type-dangdang"><span style="color:#ff3228">当当</span></label></li>
+
+<li><input hidden type="radio"name="type"id="type-meituan"value="http://cd.meituan.com/s/?w="data-placeholder="美团"><label for="type-meituan"><span style="color:#35b7a9">美团</span></label></li>
+
+</ul></div>
+
+<div class="search-group group-j"><span class="type-text">工具</span><ul class="search-type"><li><input hidden type="radio"name="type"id="type-pc6"value="http://s.pc6.com/?k="data-placeholder="PC6软件下载站"><label for="type-pc6"><span style="color:#262626">软件</span></label></li><li><input hidden type="radio"name="type"id="type-AAA"value="BBB"data-placeholder="BT下载"><label for="type-AAA"><span style="color:#262626">BT下载</span></label></li><li><input hidden type="radio"name="type"id="type-ygyhg"value="https://so.ygyhg.com/s?keyword="data-placeholder="网盘"><label for="type-ygyhg"><span style="color:#262626">网盘</span></label></li><li><input hidden type="radio"name="type"id="type-kuaidi100"value="https://m.kuaidi100.com/result.jsp?nu="data-placeholder="请输入快递单号"><label for="type-kuaidi100"><span style="color:#262626">查快递</span></label></li><li><input hidden type="radio"name="type"id="type-baidumap"value="http://map.baidu.com/?newmap=1&s=con%26wd%3D"data-placeholder="地图"><label for="type-baidumap"><span style="color:#262626">百度地图</span></label></li><li><input hidden type="radio"name="type"id="type-translateA"value="https://translate.google.cn/#zh-CN/en/"data-placeholder="中 译 英（Google）"><label for="type-translateA"><span style="color:#262626">中->英</span></label></li><li><input hidden type="radio"name="type"id="type-translateB"value="https://translate.google.cn/#en/zh-CN/"data-placeholder="英 译 中（Google）"><label for="type-translateB"><span style="color:#262626">英->中</span></label></li><li><input hidden type="radio"name="type"id="type-translateC"value="https://translate.google.cn/#zh-CN/zh-TW/"data-placeholder="简体 转 繁体（Google）"><label for="type-translateC"><span style="color:#262626">简->繁</span></label></li><li><input hidden type="radio"name="type"id="type-youdao"value="http://www.youdao.com/w/"data-placeholder="请输入要翻译的单词或文字"><label for="type-youdao"><span style="color:#262626">有道</span></label></li></ul></div>
+
+</div>
 
       <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" id="super-search-fm">
 
